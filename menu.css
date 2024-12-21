@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #1c1c1c, #6220fb);
+    font-family: Arial, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* to distribute the buttons vertically */
+    align-items: center;
+    height: 60vh; /* adjust the height to fit the buttons */
+}
+
+button {
+    border-radius: .5rem; /* Make the button edges slightly rounded */
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600; /* Increase the font weight */
+    padding: 15px 40px; /* Increase the padding */
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px; /* Increase the letter spacing */
+    transition: all 0.3s;
+    background-image: linear-gradient(90deg, #2f2f2f, #522afb); /* Improve gradient colors */
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a slight box shadow */
+}
+
+button:hover {
+    padding: 15px 50px; /* Increase padding on hover */
+    transition: all 0.3s;
+}
+
+.top {
+    order: -1; /* Reorder the BMI button to the top */
+}
+
+.middle {
+    order: 0; /* Keep the Normal calculator button in the middle */
+}
+
+.bottom {
+    order: 1; /* Keep the Grades calculator button at the bottom */
+}
+
+@media only screen and (min-width: 768px) {
+    .button-container {
+        flex-direction: row;
+        justify-content: center;
+        height: auto; /* Revert height to auto for desktop */
+    }
+
+    .top {
+        order: 0; /* Keep the BMI button at the top */
+    }
+
+    .middle {
+        order: 1; /* Reorder the Normal calculator button to the middle */
+    }
+
+    .bottom {
+        order: 2; /* Reorder the Grades calculator button to the bottom */
+    }
+
+    button {
+        margin: 10px; /* Add some margin between buttons */
+    }
+}
+ 

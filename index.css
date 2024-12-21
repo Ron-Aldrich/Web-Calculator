@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #aaa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #f8cdda, #1eae98); /* Aesthetic gradient */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background to ensure readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #33FF33; /* Light green */
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+  
+  .btn:active {
+    scale: 0.92;
+  }
+  
+  .btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 12px 20px;
+    }
+
+    button:hover {
+        padding: 16px 25px;
+    }
+}
